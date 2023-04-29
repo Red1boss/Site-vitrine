@@ -1,0 +1,109 @@
+/*
+  Garet Bold : titres de niveau 2 et 3
+  Lato : paragraphes, titres de niveau 1
+  Lato Bold : formations, diplômes
+  Couleur de fond : rgba(85, 106, 146, 0.5)
+  Couleur de texte : #737373
+  Couleur de titre et gras : #323b4c
+*/
+
+
+
+/* Initialisation */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+  font-size: large;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.fixed-top {
+  height: 10vh;
+}
+/* End initialisation */
+
+
+
+/* Header */
+.navbar {
+  background-color: rgba(0, 0, 0, 0);
+  transition-duration: 1s;
+  height: 10vh;
+}
+
+.space-width {
+  width: 100%;
+}
+/* End header */
+
+
+
+/* Main */
+section {
+  min-height: 120vh;
+  color: white;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 10vh;
+}
+
+#accueil {
+  background-image: url("https://static.pratique.fr/images/unsized/qu/quelle-difference-entre-programmeurs-et-developpeurs-199-1478783206.jpg");
+  background-position: top;
+}
+
+#formation {
+  background-image: url("https://www.letudiant.fr/uploads/mediatheque/ETU_ETU/3/2/2565632-bts-sn-systeme-numerique-original.jpg");
+  background-position: left top;
+  color: #737373;
+  height: 200vh;
+}
+
+#compétences {
+  background-image: url("https://www.creative-tim.com/blog/content/images/2022/01/which-development-job-is-right-for-you.jpg");
+  background-position: top;
+}
+
+#contact {
+  background-image: url("https://www.aravis-informatique.com/wp-content/uploads/2021/04/aleksander-vlad-jiveo0i1eb4-unsplash-scaled-2.jpg");
+  background-position: center;
+}
+
+main .row, main .container-fluid, main .container {
+  min-height: 90vh;
+}
+
+img {
+  transition-duration: 0.5s;
+}
+
+img:hover {
+  filter: brightness(0.7);
+}
+/* End main */
+
+
+
+/* Footer */
+
+/* End footer */
+
+
+/* Media queries */
+@media all and (max-width: 991) {
+  .navbar {
+    background-color: #556a92 !important;
+    transition-duration: 0.5s;
+  }
+}
+/* End media queries */
